@@ -17,10 +17,12 @@ async function fetchemployees(){
 
     // const response=await fetch('https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-employees');
     // const data = await response.json();
-    let res=await Response.json();
-    fetch("url").then((res)>res.json()).then((data)=>{console.log(data)})
-    totalemployee=data.totalemployee;
-    fillemployee(data.employee);
+   
+
+    let response= await fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-employees");
+    let res=await response.json();
+    totalemployee=res.totalemployee;
+    fillemployee(res.employee);
 }
 function fillemployee(employees){
     const tableBody = document.getElementById('employeedetails');
