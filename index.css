@@ -1,0 +1,27 @@
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+th, td{
+    border:1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+th{
+    background-color: #f2f2f2;
+}
+.pagination{
+    display:inline-block;
+}
+.pagination button{
+    background-color: #f2f2f2;
+    padding:8px 16px;
+}
+.stop{
+    pointer-events: none;
+    background-color: #cccccc;
+}
